@@ -97,8 +97,7 @@ public class Espetaculo {
      * Repare que a data da primeira sessao é sempre a data inicial.
      */
 	public List<Sessao> criaSessoes(LocalDate inicio, LocalDate fim, LocalTime horario, Periodicidade periodicidade) {
-		// ALUNO: Não apague esse metodo. Esse sim será usado no futuro! ;)
-		return null;
+		return periodicidade.getCriadorDeSessoes().criaSessoes(inicio, fim, horario, this);
 	}
 	
 	public boolean Vagas(int qtd, int min)
@@ -129,5 +128,7 @@ public class Espetaculo {
        if (totDisp >= qtd) return true;
        else return false;
    }
+   
+  
 
 }
