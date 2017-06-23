@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 import br.com.caelum.agiletickets.models.Sessao;
 
-public class CalculadorDePrecoShow implements CalculadoraDePreco {
+public class CalculadorDePrecoShow implements CalculadorDePreco {
 
 	public BigDecimal calcula(Sessao sessao) {
 		BigDecimal preco = BigDecimal.ZERO;
